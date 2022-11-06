@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <title>Tevyalmanac: Venti's Introduction to Genshin Impact</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto Slab', serif;
+                box-sizing: border-box;
+            }
+
+            .banner{
+                background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(abtmebg.jpg);
+                width: 100%;
+                height: 100vh;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            #nav {
+                width: 85%;
+                margin: auto;
+                padding: 30px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+            width: 150px;
+            }
+
+            #nav ul li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+
+            #nav ul li a{
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            #nav ul li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #41787d;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.3s;
+            }
+
+            #nav ul li:hover::after{
+                width: 100%;
+            }
+            .about{
+                width: 100%;
+                height: 80vh;
+                display: flex;
+                padding: 25px 0px;                
+            }
+            .catto{
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                background-position: center;
+                justify-content: center;
+            }
+            .about-body{
+                width: 1000px;
+            }
+            .author{
+                width: 1800px;
+                max-width: 90%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+            }
+            .about-body h1{
+                color: white;
+                font-size: 75px;
+                margin-bottom: 15px;
+            }
+            .about-body p{
+                color: white;
+                letter-spacing: 1px;
+                line-height: 30px;
+                font-size: 20px;
+                margin-bottom: 20px;
+            
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div id="nav">
+                <img src="logo.png" class="logo" alt="genshinlogo">
+                <a href="index.html"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="traveler.html">Traveler</a></li>
+                    <li><a href="archons.html">Archons</a></li>
+                    <li><a href="visions.html">Visions</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <section class="about">
+                <div class="author">
+                    <img src="catto.jpg" class="catto" alt="catto">
+                    <div class="about-body">
+                        <h1>About the Author</h1>
+                        <p>Hallo! jm here, more commonly known online as user 'Shiori', 'Lumiere' or 'Ataraxia', the creator of this website.</p>
+                        <p>I'm a struggling and barely hanging Grade 9 student from Philippine Science High School. I can only describe my school situation as 'que sera sera'</p>
+                        <p>Ahem, anyways, regarding this website. I have this huge problem with my interests and hobbies having a really wide and scattered range, so deciding
+                        what the concept for my website would be was hard. In the beginning, my website was supposed to be a library for my favorite books, but I can't visualize
+                        how it would look like so I scrapped the idea. Next idea would be desserts, but I don't know how to execute my idea. I then ended up just going for games, as 
+                        most of my friends also based their websites on one. Now, which game? After weeks of agonizing and procrastination(I'm sorry, sir) I decide to make Genshin 
+                        Impact the topic of my project.</p>
+                        <p>Now, I'm no Genshin pro, I've been playing since the release, took some breaks whenever I feel burnt out. I'm nothing but a casual player but for a non-gamer like me,
+                        no game has given me the same experience I had while playing this game. I planned to make a detailed section for each characters and add a gallery for each nation, but I'll just do that some other time.</p>
+                        <p>I love this game so much and I hope you enjoy roaming on this website.</p>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+
+        
+        
+    </body>
+</html>

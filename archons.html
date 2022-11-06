@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <title>Tevyalmanac: Venti's Introduction to Genshin Impact</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto Slab', serif;
+            }
+
+            .banner{
+                background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(archonsbg.jpg);
+                width: 100%;
+                height: 100vh;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            #nav {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+            width: 150px;
+            }
+
+            #nav ul li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+
+            #nav ul li a{
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            #nav ul li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #cc827c;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.3s;
+            }
+
+            #nav ul li:hover::after{
+                width: 100%;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+            }
+            .card{
+               background: white; 
+               width: 365px;
+               margin: 15px;
+               border-radius: 15px;
+            }
+            .statue{
+                height: 300px;
+                margin-bottom: 10px;
+                border-radius: 15px 15px 0 0;
+            }
+            .barbatos{
+                background-image: url(barbatos.png);
+                background-size: cover;
+            }
+            .morax{
+                background-image: url(morax.jpg);
+                background-size: cover;
+            }
+            .raiden{
+                background-image: url(baal.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .kusanali{
+                background-image: url(rukkhadevata.jpg);
+                background-size: cover;
+            }
+            .card h2 {
+                padding: 5px;
+            }
+            .card p{
+                padding: 5px;
+            }
+            button {
+            background-color: burlywood; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            border-radius: 10px;
+            width: 365px;
+            ;
+            }
+
+          
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div id="nav">
+                <img src="logo.png" class="logo" alt="genshinlogo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="traveler.html">Traveler</a></li>
+                    <li><a href="archons.html">Archons</a></li>
+                    <li><a href="visions.html">Visions</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>  
+            <section class="container">
+                <div class="card">
+                    <div class="statue barbatos"></div>
+                    <h2>Barbatos</h2>
+                    <p>The God of Freedom, the current Anemo Archon, and an original member The Seven who presides over Mondstadt. He wanders the world in mortal disguise as the bard Venti.
+                    </p>
+                    <button type="button">Mondstadt</button>
+                </div>
+                <div class="card">
+                    <div class="statue morax"></div>
+                    <h2>Morax</h2>
+                    <p>Also known as the God of Contracts and Rex Lapis and is the current Geo Archon and a member of The Seven. Along with Barbatos, he is one of The Seven's two original members.</p>
+                    <button type="button">Liyue</button>
+                </div>
+                <div class="card">
+                    <div class="statue raiden"></div>
+                    <h2>Ei</h2>
+                    <p>Also known by her Archon name Beelzebul, she is the God of Eternity, a member of The Seven and the current Electro Archon who presides over Inazuma.</p>
+                    <button type="button">Inazuma</button>
+                </div>
+                <div class="card">
+                    <div class="statue kusanali"></div>
+                    <h2>Rukkhadevata</h2>
+                    <p>The God of Wisdom, Lord of Verure, a member of The Seven, original Dendro Archon and the predecessor to the current Dendro Archon, Lesser Lord Kusanali.</p>
+                    <button type="button">Sumeru</button>
+                </div> 
+            </section>
+            </div>
+        
+         
+        
+
+            
+
+
+       
+    </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <title>Tevyalmanac: Venti's Introduction to Genshin Impact</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto Slab', serif;
+            }
+
+            .banner{
+                background-image: url(visions.jpg);
+                width: 100%;
+                height: 100vh;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            #nav {
+                width: 85%;
+                margin: auto;
+                padding: 30px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+            width: 150px;
+            }
+
+            #nav ul li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+
+            #nav ul li a{
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            #nav ul li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: indigo;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.3s;
+            }
+
+            #nav ul li:hover::after{
+                width: 100%;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+            }
+            .containerii{
+                display: flex;
+                justify-content: center;
+            }
+            .card{
+               background: #abb3ff; 
+               width: 350px;
+               margin: 9px;
+               border-radius: 15px;
+            }
+            .element{
+                height: 200px;
+                margin-bottom: 10px;
+                border-radius: 15px 15px 0 0;
+            }
+            .pyro{
+                background-image: url(diluc.gif);
+                background-size: cover;
+            }
+            .hydro{
+                background-image: url(childe.gif);
+                background-size: cover;
+            }
+            .anemo{
+                background-image: url(kazuha.gif);
+                background-size: cover;
+                background-position: center;
+            }
+            .electro{
+                background-image: url(keqing.gif);
+                background-size: cover;
+            }
+            .dendro{
+                background-image: url(nahida.gif);
+                background-size: cover;
+            }
+            .cryo{
+                background-image: url(ganyu.gif);
+                background-size: cover;
+            }
+            .geo{
+                background-image: url(zhongli.gif);
+                background-size: cover;
+            }
+            .card h2 {
+                padding: 5px;
+            }
+            .card p{
+                padding: 5px;
+            }
+
+            .card:hover{
+                transform: translateY(-10px);
+            }
+          
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div id="nav">
+                <img src="logo.png" class="logo" alt="genshinlogo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="traveler.html">Traveler</a></li>
+                    <li><a href="archons.html">Archons</a></li>
+                    <li><a href="visions.html">Visions</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <section class="container">
+                <div class="card">
+                    <div class="element pyro"></div>
+                    <h2 style="color: red;">Pyro</h2>
+                    <p>Pyro is one of the seven elements and represents fire. Its linked to the gem Agnidus Agate and its associated Archon is Murata, whose domain is Natlan.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="element hydro"></div>
+                    <h2 style="color: blue;">Hydro</h2>
+                    <p>Hydro is one of the seven elements and represents water. Its linked to the gem Varunada Lazurite and its associated Archon is God of Justice, whose domain is Fontaine.</p>
+                </div>
+                <div class="card">
+                    <div class="element anemo"></div>
+                    <h2 style="color: teal;">Anemo</h2>
+                    <p>Anemo is one of the seven elements and represents wind. Its linked to the gem Vayuda Turquoise and its associated Archon is Barbatos, whose domain is Mondstadt.</p>
+                </div>
+                <div class="card">
+                    <div class="element electro"></div>
+                    <h2 style="color: purple;">Electro</h2>
+                    <p>Electro is one of the seven elements and represents thunder. Its linked to the gem Vajrada Amethyst and its associated Archon is Ei, whose domain is Inazuma.</p>
+                </div> 
+            </section>
+            <section class="containerii">
+                <div class="card">
+                    <div class="element dendro"></div>
+                    <h2 style="color: lightgreen;">Dendro</h2>
+                    <p>Dendro is one of the seven elements and represents nature. Its linked to the gem Nagadus Emerald and its associated Archon is Kusanali, whose domain is Sumeru.</p>
+                </div> 
+                <div class="card">
+                    <div class="element cryo"></div>
+                    <h2 style="color: lightblue;">Cryo</h2>
+                    <p>Cryo is one of the seven elements and represents ice and winter. Its linked to the gem Shivada Jade and its associated Archon is Tsaritsa, whose domain is Snezhnaya.</p>
+                </div> 
+                <div class="card">
+                    <div class="element geo"></div>
+                    <h2 style="color: brown;">Geo</h2>
+                    <p>Geo is one of the seven elements and represents earth. Its linked to the gem Prithiva Topaz and its associated Archon is Morax, whose domain is Liyue.</p>
+                </div> 
+            </section>
+
+            
+        </div>
+
+
+       
+    </body>
+</html>
